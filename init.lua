@@ -15,16 +15,5 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
--- Show hidden dotfiles
-require("neo-tree").setup {
-  filesystem = {
-    filtered_items = {
-      visible = true,
-      hide_dotfiles = false,
-      never_show = { ".git" },
-    }
-  }
-}
-
 require "lazy_setup"
 require "polish"
